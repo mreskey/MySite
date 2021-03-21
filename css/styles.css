@@ -141,16 +141,19 @@ nav.menu {
   margin-right: auto;
   background-color: #d87c36;
   background-position: bottom;
-  width: 48%;
+  width: 100.5%;
   height: 2rem;
   transform: rotate(-4.427deg);
-  position: absolute;
-  left: -3px;
-  bottom: 4px;
-  z-index: -1;
+  position: relative;
+  bottom: 2.66rem;
+  right: 0.32%;
 }
 
 nav a {
   padding-left: 2.5%;
   padding-right: 2.5%;
+}
+
+td h1 {
+  font-family: "Rock Salt", cursive;
 }
