@@ -3,7 +3,9 @@
 /*  Using Variables */
 :root {
   --body-text: #3a6351;
-  --header-heading: #dddddd;
+  --header-heading: #f2edd7;
+  --dark-text: #393232;
+  --background-color: #f2edd7;
 }
 
 * {
@@ -11,7 +13,7 @@
 }
 
 body {
-  background-color: #f2edd7;
+  background-color: var(--background-color);
   color: var(--body-text);
   font-family: "Oswald", sans-serif;
 }
@@ -29,6 +31,14 @@ body {
   background-size: cover;
   text-align: center;
   line-height: 2;
+}
+
+.site-header img {
+  width: 25%;
+  height: 25%;
+  /* border-radius: 50%;
+  border: 3px solid var(--header-heading); */
+  padding: 3px;
 }
 
 .site-header h1 {
@@ -53,35 +63,23 @@ hr {
 
 h1 {
   text-align: center;
-  font-size: 2.5rem;
-  color: #393232;
+  font-size: 2rem;
+  color: var(--dark-text);
 }
 
 h2 {
   text-align: center;
-  color: #393232;
+  color: var(--dark-text);
 }
 
 h3,
 h4,
 h5,
 h6 {
-  color: #393232;
+  color: var(--dark-text);
 }
 
-.fa-html5 {
-  font-size: 1.5rem;
-}
-
-.fa-css3-alt {
-  font-size: 1.5rem;
-}
-
-.fa-js-square {
-  font-size: 1.5rem;
-}
-
-.fa-python {
+.fab {
   font-size: 1.5rem;
 }
 
@@ -104,6 +102,21 @@ h6 {
   margin: 0 auto 2em auto;
 }
 
+.header-container {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto 2em auto;
+}
+
+/* mobile design */
+@media (max-width: 768px) {
+  .header-container {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto 2em auto;
+  }
+}
+
 .center-table {
   margin-left: auto;
   margin-right: auto;
@@ -115,6 +128,14 @@ td {
 
 footer {
   text-align: center;
+}
+
+a:link {
+  color: #2c7873;
+}
+
+/* Put a color here */
+a:visited {
 }
 
 a:hover {
@@ -150,10 +171,13 @@ nav.menu {
 }
 
 nav a {
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  position: relative;
+  left: 3rem;
+  font-family: "Rock Salt", cursive;
 }
 
-td h1 {
+h1 {
   font-family: "Rock Salt", cursive;
 }
