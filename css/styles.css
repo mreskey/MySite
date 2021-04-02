@@ -36,8 +36,6 @@ body {
 .site-header img {
   width: 25%;
   height: 25%;
-  /* border-radius: 50%;
-  border: 3px solid var(--header-heading); */
   padding: 3px;
 }
 
@@ -108,15 +106,6 @@ h6 {
   margin: 0 auto 2em auto;
 }
 
-/* mobile design */
-@media (max-width: 768px) {
-  .header-container {
-    width: 80%;
-    text-align: center;
-    margin: 0 auto 2em auto;
-  }
-}
-
 .center-table {
   margin-left: auto;
   margin-right: auto;
@@ -131,11 +120,15 @@ footer {
 }
 
 a:link {
-  color: #2c7873;
+  color: var(--background-color);
 }
 
-/* Put a color here */
+main a:link {
+  color: #d87c36;
+}
+
 a:visited {
+  color: var(--body-text);
 }
 
 a:hover {
